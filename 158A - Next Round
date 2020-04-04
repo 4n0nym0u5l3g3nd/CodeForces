@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b,x[100],i,c=0;
+    cin>>a>>b;
+    for(i=0;i<a;i++){
+        cin>>x[i];}
+        for(i=0;i<a;i++){
+        if(x[i]>=x[b-1] && x[i]>0)
+            c++;
+    }
+    cout<<c<<endl;
+    return 0;
+}
