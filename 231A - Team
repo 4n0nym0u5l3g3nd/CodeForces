@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+   int n,a1,a2,a3,c=0;
+    cin>>n;
+    while(n--){
+        cin>>a1>>a2>>a3;
+        if(a1==1 && a2==1 && a3==1)
+            c++;
+        else if(a1==1 && a2==1)
+            c++;
+        else if(a2==1 && a3==1)
+            c++;
+        else if(a1==1 && a3==1)
+            c++;
+    }
+    cout<<c<<endl;
+    return 0;
+}
