@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a;
+    char b;
+    int l,i,j;
+    cin>>a;
+    l=a.length();
+    for(i=0;i<l;i+=2){
+        for(j=0;j<i;j+=2){
+            if(a[i]<a[j]){
+            swap(a[i],a[j]);
+        }
+      }
+    }
+    cout<<a;
+    return 0;
+}
