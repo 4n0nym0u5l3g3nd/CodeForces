@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a;
+    int l,x=0,y=0,i;
+    cin>>a;
+    l=a.length();
+    for(i=0;i<l;i++){
+            if(x>6 || y>6){
+        cout<<"YES"<<endl;
+        return 0;}
+        if(a[i]=='1'){
+            x++;
+            y=0;
+        }
+        else if(a[i]=='0'){
+            x=0;
+            y++;
+        }
+    }
+    if(x>6 || y>6)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+    return 0;
+}
