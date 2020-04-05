@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a;
+    int n,i,c=0;
+    cin>>a;
+    n=a.length();
+    sort(a.begin(),a.end());
+    for(i=0;i<n;i++){
+    if(a[i]!=a[i+1])
+        c++;
+    }
+    if(c%2==0)
+        cout<<"CHAT WITH HER!"<<endl;
+    else
+        cout<<"IGNORE HIM!"<<endl;
+    return 0;
+}
