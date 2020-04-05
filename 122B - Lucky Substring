@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a;
+    int i,l,s=0,f=0;
+    cin>>a;
+    l=a.length();
+    for(i=0;i<l;i++){
+        if(a[i]=='4')
+            f++;
+        else if(a[i]=='7')
+            s++;
+    }
+    if(f>=s && f!=0)
+        cout<<"4"<<endl;
+    else if(f<s)
+        cout<<"7"<<endl;
+    else
+        cout<<"-1"<<endl;
+
+    return 0;
+}
