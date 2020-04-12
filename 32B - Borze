@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string n,a;
+    int i,l;
+    cin>>n;
+    l=n.length();
+    for(i=0;i<l;i++){
+        if(n[i]=='.'){
+            a+='0';
+            }
+        if(n[i]=='-' && n[i+1]=='.'){
+            a+='1';
+            i++;
+            }
+        if(n[i]=='-' && n[i+1]=='-'){
+            a+='2';
+            i++;
+            }
+    }
+    cout<<a<<endl;
+    return 0;
+}
