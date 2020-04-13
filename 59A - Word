@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string s;
+    char m[100];
+    int i,l,u=0,c=0,temp=0;
+    cin>>s;
+    l=s.length();
+    for(i=0;i<l;i++){
+        if(s[i]>='A' && s[i]<='Z')
+            u++;
+        else if(s[i]>='a' && s[i]<='z')
+            c++;
+    }
+    if(u>c){
+        for(i=0;i<l;i++){
+            if(s[i]>='A' && s[i]<='Z'){
+                m[i]=s[i];
+                cout<<m[i];}
+            else{
+                m[i]=s[i]-32;
+                cout<<m[i];}
+        }
+    }
+    else{
+        for(i=0;i<l;i++){
+            if(s[i]>='a' && s[i]<='z'){
+                m[i]=s[i];
+                cout<<m[i];}
+            else{
+                m[i]=s[i]+32;
+                cout<<m[i];}
+        }
+    }
+    return 0;
+}
