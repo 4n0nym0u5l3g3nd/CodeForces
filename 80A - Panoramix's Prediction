@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int p[20]={2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
+    int m,n,i;
+    cin>>m>>n;
+    for(i=0;i<15;i++)
+            if(p[i]==m)
+            break;
+        if(i<15 && n==p[i+1])
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+    return 0;
+}
