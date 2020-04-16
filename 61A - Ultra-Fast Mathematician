@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string m,n;
+    int x,i;
+    cin>>m>>n;
+    x=m.length();
+    for(i=0;i<x;i++){
+        if(m[i]==n[i])
+            m[i]='0';
+        else
+            m[i]='1';
+    }
+    cout<<m<<endl;
+    return 0;
+}
