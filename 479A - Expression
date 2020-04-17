@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b,c,m1,m2,m3,m4,m5,m6;
+    cin>>a>>b>>c;
+    m1=a+b+c;
+    m2=a*b*c;
+    m3=a+b*c;
+    m4=a*b+c;
+    m5=(a+b)*c;
+    m6=a*(b+c);
+    cout<<max(m1,max(m2,max(m3,max(m4,max(m5,m6)))))<<endl;
+    return 0;
+    }
