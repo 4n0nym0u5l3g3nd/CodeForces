@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x,i,p[100],s=0;
+    double n;
+    cin>>x;
+    for(i=0;i<x;i++){
+        cin>>p[i];
+        s+=p[i];
+    }
+    n=(s*1.0)/x;
+    printf("%lf\n",n);
+    return 0;
+}
