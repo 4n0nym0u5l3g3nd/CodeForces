@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t,n,i,c=1,x=1;
+    cin>>t;
+    while(t--){
+            c=1;x=1;
+        cin>>n;
+        for(i=1;i<=30;i++){
+            c*=2;
+            x+=c;
+            if(n%x==0){
+                cout<<n/x<<endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
