@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,l,r,onl=0,zl=0,zr=0,onr=0,t=0,i;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>l>>r;
+        if(l==0)
+            zl++;
+        else if(l==1)
+            onl++;
+        if(r==0)
+                zr++;
+        else if(r==1)
+                onr++;
+    }
+    if(zl>onl)
+        t+=onl;
+    else
+        t+=zl;
+    if(zr>onr)
+        t+=onr;
+    else
+        t+=zr;
+    cout<<t<<endl;
+    return 0;
+}
