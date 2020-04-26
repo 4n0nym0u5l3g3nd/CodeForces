@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a,b,c,d;
+    int l1,l2,i,t(0);
+    cin>>a>>b>>c;
+    d=a+b;
+    l1=c.length();
+    l2=d.length();
+    if(l1!=l2)
+        cout<<"NO"<<endl;
+    else{
+        sort(c.begin(),c.end());
+        sort(d.begin(),d.end());
+        for(i=0;i<l1;i++){
+            if(c[i]==d[i])
+                t+=1;
+        }
+        if(t==l1)
+             cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+    }
+    return 0;
+}
