@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,i,j,l,r,k,s(0),temp(0);
+    cin>>n;
+   for(i=0;i<n;i++){
+    cin>>l>>r;
+    s-=l;
+    s+=r;
+    if(s>temp)
+        temp=s;
+   }
+   cout<<temp<<endl;
+    return 0;
+}
