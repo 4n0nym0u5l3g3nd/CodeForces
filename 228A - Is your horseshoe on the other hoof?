@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a[10],i,temp(0),j;
+    for(i=0;i<4;i++){
+        cin>>a[i];}
+      for(i=0;i<4;i++){
+            sort(a,a+4);
+        if(a[i]==a[i+1])
+            temp++;
+    }
+    cout<<temp<<endl;
+    return 0;
+
+}
